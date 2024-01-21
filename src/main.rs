@@ -7,6 +7,8 @@ use actions::create::create_task;
 use actions::list::list_task;
 use actions::help::help_func;
 
+#[allow(unused_assignments)]
+
 fn main() {
     let mut tasks: Vec<String> = Vec::new();
     tasks = load_tasks().unwrap_or_else(|err| {
